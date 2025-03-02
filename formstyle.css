@@ -1,0 +1,114 @@
+/* strictly for the form page to not overwhelm myself*/
+        body {
+            font-family: Arial, monospace;
+            background-color: #e0e8f9;
+            padding: 20px;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        header {
+                text-align: center;
+                color: black;
+                padding: 10px;
+            }
+
+        /* Keeping the container center for the form followed the example code but the text on the left side*/
+        .container {
+            max-width: 600px;
+            margin: 0px auto;
+            padding: 20px;
+            text-align: left;
+            background-color: #e0e8f9;
+            border-radius: 8px;
+        }
+
+        
+        /* Checkbox section */
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px; 
+        }
+
+        .checkbox-group div {
+            display: flex;
+            align-items: center;
+            gap: 5px; 
+        }
+
+
+        /* Using example as gudie  to help with styling form elements */
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+             gap: 15px; 
+        }
+
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .input-area {
+            width: 100%;  
+            box-sizing: border-box;  
+        }
+      /*uising a resuable class for the button when submiting the form*/
+        .botton-class {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4cafa0;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .botton-class:hover {
+            background-color: #477770;
+        }
+
+    footer {
+        background-color: #435383;
+        color: white; 
+        text-align: center; /* Center the text */
+        padding: 20px; /* Add some padding */
+        margin-top: auto; /* Push the footer down if using flexbox */
+
+    }
+
+        /* Having a Media Query for responsiveness starting with small screen tablets using example as gudie*/
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                width: 90%;
+            }
+
+            input, textarea {
+                font-size: 14px;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
+
+        /* More responsiveness for even smaller screens using example as gudie*/
+        @media (max-width: 480px) {
+            input, textarea {
+                font-size: 12px;
+            }
+
+            button {
+                width: 100%;
+            }
+        }

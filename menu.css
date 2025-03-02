@@ -1,0 +1,67 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #435383;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: white;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block; /* Show toggle button on all screens */
+}
+
+/* Menu Items */
+.menu-items {
+    list-style: none;   
+    display: none; /* Hide by default */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%;
+    background-color: #435383;
+    position: absolute;
+    top: 60px; /* Adjust based on your navbar height */
+    left: 0;
+
+    z-index: 1000; /* Ensure the menu is above other content */
+
+}
+
+/* Show menu items when active */
+.menu-items.active {
+    display: flex; /* Show menu when active */
+}
+
+/*haviing the link white*/
+.menu-items li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive Styles focusing on a resposive menu*/
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column; /* Stack items vertically in mobile view */
+        display: none; /* Hide by default */
+        width: 100%;
+        background-color: #435383;
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        z-index: 1000; /* Ensure the menu is above other content */
+    }
+
+    .menu-items.active {
+        display: flex; /* Show menu when active */
+    }
+}
