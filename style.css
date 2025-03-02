@@ -59,10 +59,13 @@ h1{
 footer {
     background-color: #435383;
     color: white; 
+    justify-content: center;
     text-align: center; /* Center the text */
-    padding: 20px; /* Add some padding */
-    margin-top: auto; /* Push the footer down if using flexbox */
-
+    padding: 20px; 
+    margin-top: auto; 
+    display: flex;
+    gap: 50px;
+    
 }
 
 @media (max-width: 480px) {
