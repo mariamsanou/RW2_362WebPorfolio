@@ -77,14 +77,17 @@
             background-color: #477770;
         }
 
-    footer {
-        background-color: #435383;
-        color: white; 
-        text-align: center; /* Center the text */
-        padding: 20px; /* Add some padding */
-        margin-top: auto; /* Push the footer down if using flexbox */
-
-    }
+   footer {
+    background-color: #435383;
+    color: white; 
+    justify-content: center;
+    text-align: center; /* Center the text */
+    padding: 20px; 
+    margin-top: auto; 
+    display: flex;
+    gap: 50px;
+    
+}
 
         /* Having a Media Query for responsiveness starting with small screen tablets using example as gudie*/
         @media (max-width: 768px) {
